@@ -1,8 +1,8 @@
-# SuperBizAgent
+# Intelligent_alarm_Agent
 
-> 基于 Spring Boot + AI Agent 的智能问答与运维系统
+> 基于 Spring Boot + AI Agent 的智能运维系统
 
-## 📖 项目简介
+##  项目简介
 
 企业级智能业务代理系统，包含两大核心模块：
 
@@ -12,7 +12,7 @@
 ### 2. AIOps 智能运维
 基于 AI Agent 的自动化运维系统，采用 Planner-Executor-Replanner 架构，实现告警分析、日志查询、智能诊断和报告生成。
 
-## 🚀 核心特性
+##  核心特性
 
 - ✅ **RAG 问答**: 向量检索 + 多轮对话 + 流式输出
 - ✅ **AIOps 运维**: 智能诊断 + 多 Agent 协作 + 自动报告
@@ -21,7 +21,7 @@
 - ✅ **Web 界面**: 提供测试界面和 RESTful API
 
 
-## 🛠️ 技术栈
+##  技术栈
 
 | 技术 | 版本 | 说明 |
 |------|------|------|
@@ -31,16 +31,16 @@
 | DashScope | 2.17.0 | 阿里云 AI 服务 |
 | Milvus | 2.6.10 | 向量数据库 |
 
-## 📦 核心模块
+##  核心模块
 
 ```
 SuperBizAgent/
 ├── src/main/java/org/example/
 │   ├── controller/
-│   │   └── ChatController.java        # 统一接口控制器 ⭐
+│   │   └── ChatController.java        # 统一接口控制器 
 │   ├── service/
-│   │   ├── ChatService.java           # 对话服务 ⭐
-│   │   ├── AiOpsService.java          # AIOps 服务 ⭐
+│   │   ├── ChatService.java           # 对话服务 
+│   │   ├── AiOpsService.java          # AIOps 服务 
 │   │   ├── RagService.java            # RAG 服务
 │   │   └── Vector*.java               # 向量服务
 │   ├── agent/tool/                    # Agent 工具集
@@ -56,7 +56,7 @@ SuperBizAgent/
 ```
 
 
-## 📡 核心接口
+##  核心接口
 
 ### 1. 智能问答接口
 
@@ -102,7 +102,7 @@ POST /api/ai_ops
 - `GET /milvus/health` - Milvus 健康检查
 
 
-## ⚙️ 核心配置
+##  核心配置
 
 ### application.yml
 
@@ -140,7 +140,7 @@ export DASHSCOPE_API_KEY=your-api-key
 ```
 
 
-## 🚀 快速开始
+##  快速开始
 
 ### 1. 环境准备
 
@@ -191,5 +191,4 @@ curl http://localhost:9900/milvus/health
 
 
 **版本**: v1.0.0  
-**作者**: chief  
-**许可证**: MIT
+
